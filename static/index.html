@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meridian Wealth Financial Analyst</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="hero">
+            <div>
+                <p class="eyebrow">Meridian Wealth Partners</p>
+                <h1>Financial Analyst Agent</h1>
+                <p class="subtitle">Ask the agent for portfolio briefings, policy checks, market context, and calculation support.</p>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="panel">
+                <form id="query-form" class="query-form">
+                    <label for="query">Enter your query:</label>
+                    <textarea id="query" name="query" rows="6" placeholder="e.g. Prepare a quarterly briefing for Client CLT-001..."></textarea>
+                    <button type="submit">Run query</button>
+                </form>
+            </section>
+
+            <section class="panel response-panel">
+                <div class="response-header">
+                    <h2>Agent response</h2>
+                    <span id="status" class="status-label">Ready</span>
+                </div>
+                <pre id="response" class="response-output">Submit a query to see the financial analyst response.</pre>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.env
+.env.*
+.venv/
+venv/
+
+*.pem
+
+__pycache__/
+*.pyc
+
+vector_db/
+vectordb/
+
+*.db
+
+.vscode/
